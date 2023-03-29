@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Karla', sans-serif;
+}
+nav{
+    background: hsl(0, 0%, 98%);
+    height: 80px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+label.logo{
+    color: hsl(256, 26%, 20%);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 150px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 140px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: hsl(273, 4%, 51%);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    color: hsl(256, 26%, 20%);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: hsl(256, 26%, 20%);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.hero-image{
+    width: 33%;
+    height: 75%;
+    position: absolute;
+    margin: 100px 150px 0 720px;
+}
+.hero-image-m{
+    display: none;
+}
+.hero-section{
+    background-color: hsl(256, 26%, 20%);
+    padding: 100px 0 100px 150px;
+}
+hr{
+    width: 10%;
+    height: 0;
+    color: hsl(0, 0%, 98%);
+    border-style: solid;
+    margin-bottom: 30px;
+    border-width: 1px;
+    margin-left: 0px;
+}
+h1{
+    font-family: 'DM Serif Display', serif;
+    color: hsl(0, 0%, 98%);
+    font-size: 54px;
+    width: 32%;
+    margin-bottom: 0;
+}
+h3{
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    color: hsl(256, 26%, 20%);
+}
+p{
+    color: hsl(0, 0%, 98%);
+    width: 47%;
+    line-height: 2;
+    font-size: 16px;
+}
+button{
+    padding: 12px 32px;
+    border-radius: 0;
+    background-color: transparent;
+    color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 98%);
+    margin-top: 20px;
+}
+button:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+}
+.sec-btn{
+    padding: 12px 32px;
+    border-radius: 0;
+    background-color: transparent;
+    color: hsl(256, 26%, 20%);
+    border: 1px solid hsl(256, 26%, 20%);
+    margin-top: 20px;
+}
+.sec-btn:hover{
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+}
+.pattern-intro{
+    width: 30%;
+    position: absolute;
+    left: 70%;
+    top: 0%;
+    z-index: 2;
+}
+.pattern-intro-2{
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+}
+
+/* offers */
+
+.offers-div{
+    margin: 300px 150px 100px 150px;
+}
+.offer-line{
+    color: hsl(0, 3%, 86%);
+}
+.offer-h1{
+    color: hsl(256, 26%, 20%);
+    width: 50%;
+}
+.offers-container{
+    margin-top: 100px;
+    display: flex;
+}
+.icon{
+    width: 62px;
+    margin-bottom: 30px;
+}
+.offer-dsc{
+    width: 100%;
+    color: hsl(273, 4%, 51%);
+    margin: 20px 0 0 0;
+}
+.offers{
+    margin-left: 40px;
+}
+
+/* how we work */
+
+.how-we-work{
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    margin: 150px;
+    padding: 50px;
+}
+.work-h1{
+    width: 40%;
+    font-size: 42px;
+    margin: 0;
+}
+.work-button{
+    margin: 15px 0 0 350px;
+}
+
+
+/* footer section */
+
+#footer{
+    background-color: hsl(0, 0%, 98%);
+    padding: 30px 150px 30px 150px;
+}
+.logo-sm-icons{
+    display: flex;
+    border-bottom: 1px solid hsl(0, 3%, 86%);
+    padding: 20px 0 30px 0;
+}
+.footer-icons{
+    margin: 0 0 0 790px;
+}
+.footer-link-cont{
+    display: flex;
+    margin-top: 40px;
+}
+.footer-link-cont h6{
+    color: hsl(0, 1%, 68%);
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer-link{
+    color: hsl(256, 26%, 20%);
+    width: 100%;
+    font-size: 12px;
+}
+.help-div, .contact-div, .others-div{
+    margin: 0 0 0 150px;
+}
+
+.attribution{
+    margin-top: 32px;
+}
+.attribution a {
+    color: hsl(256, 26%, 20%);
+    font-weight: 700;
+}
+
+/* responsiveness */
+
+
+@media (max-width: 1024px) {
+    label.logo{
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    nav ul{
+        margin-right: 70px;
+    }
+    .hero-section{
+        padding: 100px 50px 100px 50px;
+    }
+    .hero-image{
+        width: 40%;
+        height: 45%;
+        position: absolute;
+        margin: 100px 150px 0 550px;
+    }
+    .pattern-intro{
+        top: 5%;
+    }
+    .pattern-intro-2{
+        width: 10%;
+        top: 45%;
+    }
+
+    .offers-div{
+        margin: 200px 50px 100px 50px;
+    }
+
+    .how-we-work{
+        margin: 50px;
+    }
+    .work-h1{
+        width: 40%;
+        font-size: 32px;
+        margin: 0;
+    }
+    .work-button{
+        margin: 0 0 0 300px;
+    }
+
+    #footer{
+        padding: 30px 50px 30px 50px;
+    }
+    .attribution{
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 858px){
+    body{
+        text-align: center;
+        width: 100%;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 400px;
+        background: hsl(270, 9%, 17%);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 16px;
+        color: rgb(183, 180, 180);
+    }
+    a:hover,a.active{
+        color: hsl(0, 0%, 98%);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .sec-btn{
+        color: hsl(0, 0%, 98%);
+        border-color: hsl(0, 0%, 98%);
+        padding: 16 90px;
+    }
+    .hero-image{
+        display: none;
+    }
+    .hero-image-m{
+        display: block;
+        width: 100%;
+    }
+    .hero-section{
+        
+        padding: 100px 20px 100px 20px;
+    }
+    .pattern-intro{
+        display: none;
+    }
+    .pattern-intro-2{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    p{
+        margin: auto;
+        width: 80%;
+    }
+    hr{
+        margin: auto;
+        margin-bottom: 30px;
+        width: 20%;
+    }
+
+
+    .offers-div{
+        margin: 100px 20px 100px 20px;
+    }
+    .offers-container{
+        margin-top: 100px;
+        display: block;
+    }
+    .offers{
+        margin: 30px 0 0 0;
+    }
+    .offer-h1{
+        width: 100%;
+    }
+    .offer-dsc{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+
+
+    .how-we-work{
+        background-color: hsl(256, 26%, 20%);
+        display: block;
+        margin: 20px 20px 60px 20px;
+        padding: 40px;
+    }
+    .work-h1{
+        width: 100%;
+        font-size: 32px;
+        margin: 0;
+    }
+    .work-button{
+        margin: 15px auto;
+    }
+
+
+    #footer{
+        padding: 30px 20px 30px 20px;
+    }
+    .logo-sm-icons{
+        display: block;
+    }
+    .footer-icons{
+        display: inline;
+        margin: auto;
+    }
+    .f-icon{
+        width: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    .footer-link-cont{
+        display: block;
+    }
+    .help-div, .contact-div, .others-div{
+        margin: 20px auto;
+    }
+
+    .attribution{
+        margin-top: 22px;
+        text-align: center;
+    }
+}
